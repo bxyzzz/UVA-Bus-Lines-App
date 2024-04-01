@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'src/bus_lines.dart';
+
 
 class MapViewPage extends StatefulWidget {
   final BusLine busLine;
@@ -18,19 +20,19 @@ class _MapViewPageState extends State<MapViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.busLine.name),
+        title: Text(widget.busLine.longName),
       ),
       body: GoogleMap(
         onMapCreated: (controller) {
           _controller = controller;
-          setMapBounds(); // Implement this method based on widget.busLine.bounds
+          //setMapBounds(); // Implement this method based on widget.busLine.bounds
         },
         initialCameraPosition: CameraPosition(
           // Initial position based on bus line's bounds or a default position
-          target: LatLng(defaultLat, defaultLng),
+          target: LatLng(38.0316,  -78.5108),
           zoom: 10,
         ),
-        markers: getMarkersForStops(), // Implement this based on widget.busLine.stops
+        //markers: getMarkersForStops(), // Implement this based on widget.busLine.stops
       ),
     );
   }

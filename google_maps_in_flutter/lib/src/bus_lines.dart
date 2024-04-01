@@ -11,6 +11,7 @@ class BusLine {
   final String textColor;
   final String type;
   final String url;
+  bool isFavorite;
 
   BusLine({
     required this.agencyId,
@@ -24,6 +25,7 @@ class BusLine {
     required this.textColor,
     required this.type,
     required this.url,
+    required this.isFavorite
   });
 
   factory BusLine.fromJson(Map<String, dynamic> json) {
@@ -39,9 +41,11 @@ class BusLine {
       textColor: json['text_color'],
       type: json['type'],
       url: json['url'],
+      isFavorite: false,
     );
   }
 }
+
 /*
 class BusLine {
     List<Line> lines;
