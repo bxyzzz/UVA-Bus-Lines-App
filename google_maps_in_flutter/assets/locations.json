@@ -1,0 +1,2035 @@
+{
+  "lines": [
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.031599,
+        -78.508578,
+        38.130205,
+        -78.436039
+      ],
+      "color": "F15A29",
+      "description": "",
+      "id": 4013468,
+      "is_active": true,
+      "long_name": "29 North CONNECT",
+      "short_name": "29N",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        37.544322,
+        -78.514674,
+        38.031301,
+        -78.438473
+      ],
+      "color": "7267FF",
+      "description": "",
+      "id": 4013470,
+      "is_active": true,
+      "long_name": "Buckingham East CONNECT",
+      "short_name": "BUCK-E",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        37.544322,
+        -78.585817,
+        38.07436,
+        -78.473779
+      ],
+      "color": "A540FF",
+      "description": "",
+      "id": 4013472,
+      "is_active": true,
+      "long_name": "Buckingham North CONNECT",
+      "short_name": "BUCK-N",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        37.750511,
+        -78.879282,
+        38.032586,
+        -78.472787
+      ],
+      "color": "e50095",
+      "description": "",
+      "id": 4013478,
+      "is_active": false,
+      "long_name": "Lovingston CONNECT",
+      "short_name": "LOVE",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.031257,
+        -78.509224,
+        38.041401,
+        -78.4980769737139
+      ],
+      "color": "2849ed",
+      "description": "",
+      "id": 4013576,
+      "is_active": true,
+      "long_name": "Blue Line",
+      "short_name": "BLUE",
+      "text_color": "0000FF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.029557,
+        -78.514843,
+        38.032554,
+        -78.4980769737139
+      ],
+      "color": "ff002e",
+      "description": "",
+      "id": 4013582,
+      "is_active": true,
+      "long_name": "Red Line",
+      "short_name": "RED",
+      "text_color": "FF0000",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.031599,
+        -78.71744,
+        38.070638,
+        -78.484879
+      ],
+      "color": "35469E",
+      "description": "",
+      "id": 4013640,
+      "is_active": false,
+      "long_name": "Crozet CONNECT Loop",
+      "short_name": "CROZ-L",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.0321088760668,
+        -78.514117,
+        38.045833,
+        -78.505573
+      ],
+      "color": "7a7575",
+      "description": "",
+      "id": 4013968,
+      "is_active": false,
+      "long_name": "Silver Line",
+      "short_name": "SLV",
+      "text_color": "C0C0C0",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.0285982,
+        -78.519591,
+        38.041785,
+        -78.491635
+      ],
+      "color": "0c8103",
+      "description": "",
+      "id": 4013970,
+      "is_active": true,
+      "long_name": "Green Line",
+      "short_name": "GRN",
+      "text_color": "00FF00",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.0285982,
+        -78.519591,
+        38.052025,
+        -78.5047036180968
+      ],
+      "color": "ffd700",
+      "description": "",
+      "id": 4013972,
+      "is_active": true,
+      "long_name": "Gold Line",
+      "short_name": "GOLD",
+      "text_color": "FFD700",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.026107,
+        -78.516414,
+        38.041785,
+        -78.491635
+      ],
+      "color": "ff7300",
+      "description": "",
+      "id": 4013976,
+      "is_active": true,
+      "long_name": "Orange Line",
+      "short_name": "OR",
+      "text_color": "FFA500",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.029557,
+        -78.514843,
+        38.032554,
+        -78.4980769737139
+      ],
+      "color": "ff0000",
+      "description": "",
+      "id": 4014050,
+      "is_active": false,
+      "long_name": "Red Line Express",
+      "short_name": "RDX",
+      "text_color": "FF0000",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.031599,
+        -78.698305,
+        38.069908,
+        -78.484879
+      ],
+      "color": "0FC464",
+      "description": "",
+      "id": 4014854,
+      "is_active": true,
+      "long_name": "Crozet East CONNECT",
+      "short_name": "CROZ-E",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.025824,
+        -78.71744,
+        38.070638,
+        -78.484879
+      ],
+      "color": "1D5131",
+      "description": "",
+      "id": 4014856,
+      "is_active": true,
+      "long_name": "Crozet West CONNECT",
+      "short_name": "CROZ-W",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.026406,
+        -78.5196665720098,
+        38.0366256117848,
+        -78.500844
+      ],
+      "color": "232d48",
+      "description": "",
+      "id": 4015720,
+      "is_active": false,
+      "long_name": "Night Pilot",
+      "short_name": "NP",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    },
+    {
+      "agency_id": 347,
+      "bounds": [
+        38.029557,
+        -78.514843,
+        38.032554,
+        -78.4980769737139
+      ],
+      "color": "eaff4d",
+      "description": "",
+      "id": 4016204,
+      "is_active": false,
+      "long_name": "Madison-Preston Morning Hospital Shuttle",
+      "short_name": "MPHS",
+      "text_color": "FFFFFF",
+      "type": "bus",
+      "url": ""
+    }
+  ],
+  "routes": [
+    {
+      "id": 4013468,
+      "stops": [
+        4267066,
+        4267010,
+        4267026,
+        4267060,
+        4267006,
+        4267022,
+        4267024
+      ]
+    },
+    {
+      "id": 4013470,
+      "stops": [
+        4267002,
+        4267032,
+        4267048,
+        4267050,
+        4267062,
+        4267028,
+        4267068
+      ]
+    },
+    {
+      "id": 4013472,
+      "stops": [
+        4267004,
+        4267002,
+        4267032,
+        4267048,
+        4267050,
+        4267046,
+        4267062,
+        4267020,
+        4267006,
+        4267000,
+        4267014,
+        4267038
+      ]
+    },
+    {
+      "id": 4013478,
+      "stops": [
+        4267034,
+        4267054,
+        4267008,
+        4267020,
+        4267062,
+        4267022,
+        4267064
+      ]
+    },
+    {
+      "id": 4013576,
+      "stops": [
+        4266802,
+        4235190,
+        4235192,
+        4235184,
+        4235170
+      ]
+    },
+    {
+      "id": 4013582,
+      "stops": [
+        4235148,
+        4235190,
+        4235192,
+        4235184,
+        4235170
+      ]
+    },
+    {
+      "id": 4013640,
+      "stops": [
+        4267066,
+        4267030,
+        4267072,
+        4267044,
+        4267042,
+        4267040,
+        4267058,
+        4267056,
+        4267016,
+        4267012,
+        4267018,
+        4267052,
+        4267036,
+        4267070,
+        4267022,
+        4267006
+      ]
+    },
+    {
+      "id": 4013968,
+      "stops": [
+        4236270,
+        4235134,
+        4266800,
+        4238078,
+        4238082,
+        4245942,
+        4245900,
+        4245946,
+        4250392
+      ]
+    },
+    {
+      "id": 4013970,
+      "stops": [
+        4258644,
+        4260152,
+        4258640,
+        4235108,
+        4235106,
+        4235242,
+        4235162,
+        4258642,
+        4245936,
+        4245902,
+        4245928,
+        4245930,
+        4245932,
+        4245906,
+        4245908,
+        4245904,
+        4245934,
+        4235158,
+        4235160,
+        4235220,
+        4258638,
+        4260150
+      ]
+    },
+    {
+      "id": 4013972,
+      "stops": [
+        4258644,
+        4260152,
+        4258640,
+        4235108,
+        4235106,
+        4235242,
+        4235162,
+        4235158,
+        4235160,
+        4235220,
+        4258638,
+        4260150,
+        4258642,
+        4250388,
+        4250386,
+        4235136,
+        4268544,
+        4248160,
+        4248152,
+        4248158,
+        4248156,
+        4235116,
+        4235114,
+        4235206,
+        4235262,
+        4235200,
+        4236270,
+        4235134,
+        4266800,
+        4250390
+      ]
+    },
+    {
+      "id": 4013976,
+      "stops": [
+        4258644,
+        4260152,
+        4258640,
+        4235108,
+        4235106,
+        4245918,
+        4245920,
+        4245912,
+        4245924,
+        4235168,
+        4245910,
+        4245894,
+        4245890,
+        4245928,
+        4245930,
+        4245932,
+        4245906,
+        4245908,
+        4245904,
+        4245934
+      ]
+    },
+    {
+      "id": 4014050,
+      "stops": [
+        4235184,
+        4235170,
+        4235190,
+        4235192
+      ]
+    },
+    {
+      "id": 4014854,
+      "stops": [
+        4267066,
+        4267056,
+        4267058,
+        4267044,
+        4267042,
+        4267040,
+        4267072,
+        4267030,
+        4267006,
+        4267022
+      ]
+    },
+    {
+      "id": 4014856,
+      "stops": [
+        4267066,
+        4267036,
+        4267016,
+        4267012,
+        4267018,
+        4267052,
+        4267008,
+        4267070,
+        4267022
+      ]
+    },
+    {
+      "id": 4015720,
+      "stops": [
+        4258644,
+        4260152,
+        4258640,
+        4265734,
+        4265736,
+        4235162,
+        4266820,
+        4245918,
+        4245920,
+        4245912,
+        4245924,
+        4235168,
+        4245910,
+        4266818
+      ]
+    },
+    {
+      "id": 4016204,
+      "stops": []
+    }
+  ],
+  "stops": [
+    {
+      "code": "006",
+      "description": "",
+      "id": 4235106,
+      "location_type": "stop",
+      "name": "Alderman Rd @ Gooch/Dillard (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.029305,
+        -78.516414
+      ],
+      "url": ""
+    },
+    {
+      "code": "007",
+      "description": "",
+      "id": 4235108,
+      "location_type": "stop",
+      "name": "Alderman Rd @ O-Hill Dining Hall",
+      "parent_station_id": null,
+      "position": [
+        38.033937,
+        -78.51424
+      ],
+      "url": ""
+    },
+    {
+      "code": "010",
+      "description": "",
+      "id": 4235114,
+      "location_type": "stop",
+      "name": "Arlington Blvd @ Jeffersonian Apts",
+      "parent_station_id": null,
+      "position": [
+        38.050831,
+        -78.508076
+      ],
+      "url": ""
+    },
+    {
+      "code": "011",
+      "description": "",
+      "id": 4235116,
+      "location_type": "stop",
+      "name": "Arlington Blvd @ Barracks Rd Shopping Ctr",
+      "parent_station_id": null,
+      "position": [
+        38.048796,
+        -78.505219
+      ],
+      "url": ""
+    },
+    {
+      "code": "024",
+      "description": "",
+      "id": 4235134,
+      "location_type": "stop",
+      "name": "Emmet St @ Goodwin Bridge (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.043279,
+        -78.505573
+      ],
+      "url": ""
+    },
+    {
+      "code": "025",
+      "description": "",
+      "id": 4235136,
+      "location_type": "stop",
+      "name": "Emmet St @ Goodwin Bridge (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.043246,
+        -78.505373
+      ],
+      "url": ""
+    },
+    {
+      "code": "032",
+      "description": "",
+      "id": 4235148,
+      "location_type": "stop",
+      "name": "George Welsh Way @ Scott Stadium",
+      "parent_station_id": null,
+      "position": [
+        38.029557,
+        -78.514843
+      ],
+      "url": ""
+    },
+    {
+      "code": "038",
+      "description": "",
+      "id": 4235158,
+      "location_type": "stop",
+      "name": "Hereford Dr @ Johnson House (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.030505,
+        -78.519591
+      ],
+      "url": ""
+    },
+    {
+      "code": "039",
+      "description": "",
+      "id": 4235160,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Kellogg House",
+      "parent_station_id": null,
+      "position": [
+        38.033832,
+        -78.517766
+      ],
+      "url": ""
+    },
+    {
+      "code": "040",
+      "description": "",
+      "id": 4235162,
+      "location_type": "stop",
+      "name": "Hereford Dr @ Runk Dining Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0294519646465,
+        -78.519504608633
+      ],
+      "url": ""
+    },
+    {
+      "code": "043",
+      "description": "",
+      "id": 4235168,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Brandon Ave",
+      "parent_station_id": null,
+      "position": [
+        38.032023,
+        -78.503314
+      ],
+      "url": ""
+    },
+    {
+      "code": "044",
+      "description": "",
+      "id": 4235170,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Cabell Hall",
+      "parent_station_id": null,
+      "position": [
+        38.032126,
+        -78.504069
+      ],
+      "url": ""
+    },
+    {
+      "code": "052",
+      "description": "",
+      "id": 4235184,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ UVA Medical Center",
+      "parent_station_id": null,
+      "position": [
+        38.032554,
+        -78.500494
+      ],
+      "url": ""
+    },
+    {
+      "code": "055",
+      "description": "",
+      "id": 4235190,
+      "location_type": "stop",
+      "name": "Lane Rd @ MR-5",
+      "parent_station_id": null,
+      "position": [
+        38.031257,
+        -78.500824
+      ],
+      "url": ""
+    },
+    {
+      "code": "056",
+      "description": "",
+      "id": 4235192,
+      "location_type": "stop",
+      "name": "Lee St @ UVA Medical Center",
+      "parent_station_id": null,
+      "position": [
+        38.0317698453987,
+        -78.4980769737139
+      ],
+      "url": ""
+    },
+    {
+      "code": "060",
+      "description": "",
+      "id": 4235200,
+      "location_type": "stop",
+      "name": "Massie Rd @ Faulkner Apts (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.047902,
+        -78.512114
+      ],
+      "url": ""
+    },
+    {
+      "code": "063",
+      "description": "",
+      "id": 4235206,
+      "location_type": "stop",
+      "name": "Massie Rd @ Law School",
+      "parent_station_id": null,
+      "position": [
+        38.052025,
+        -78.510184
+      ],
+      "url": ""
+    },
+    {
+      "code": "073",
+      "description": "",
+      "id": 4235220,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Lile-Maupin House (Eastbound)",
+      "parent_station_id": null,
+      "position": [
+        38.035015,
+        -78.516131
+      ],
+      "url": ""
+    },
+    {
+      "code": "087",
+      "description": "",
+      "id": 4235242,
+      "location_type": "stop",
+      "name": "Stadium Rd @ Runk Dining Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0285982,
+        -78.5182733
+      ],
+      "url": ""
+    },
+    {
+      "code": "099",
+      "description": "",
+      "id": 4235262,
+      "location_type": "stop",
+      "name": "Massie Rd @ North Grounds Rec (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0507535,
+        -78.5125531
+      ],
+      "url": ""
+    },
+    {
+      "code": "105",
+      "description": "",
+      "id": 4236270,
+      "location_type": "stop",
+      "name": "Massie Rd @ JPJ South Lot",
+      "parent_station_id": null,
+      "position": [
+        38.045833,
+        -78.508648
+      ],
+      "url": ""
+    },
+    {
+      "code": "022",
+      "description": "",
+      "id": 4238078,
+      "location_type": "stop",
+      "name": "Emmet St @ Alumni Hall",
+      "parent_station_id": null,
+      "position": [
+        38.038348,
+        -78.507302
+      ],
+      "url": ""
+    },
+    {
+      "code": "026",
+      "description": "",
+      "id": 4238082,
+      "location_type": "stop",
+      "name": "Emmet St @ Ridley Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0348662579923,
+        -78.5085704920654
+      ],
+      "url": ""
+    },
+    {
+      "code": "001",
+      "description": "",
+      "id": 4245890,
+      "location_type": "stop",
+      "name": "14th Street @ John St",
+      "parent_station_id": null,
+      "position": [
+        38.037374,
+        -78.497805
+      ],
+      "url": ""
+    },
+    {
+      "code": "002",
+      "description": "",
+      "id": 4245892,
+      "location_type": "stop",
+      "name": "14th Street @ Virginia Ave",
+      "parent_station_id": null,
+      "position": [
+        38.037641,
+        -78.497755
+      ],
+      "url": ""
+    },
+    {
+      "code": "003",
+      "description": "",
+      "id": 4245894,
+      "location_type": "stop",
+      "name": "14th Street @ Wertland St (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.034605,
+        -78.499256
+      ],
+      "url": ""
+    },
+    {
+      "code": "004",
+      "description": "",
+      "id": 4245896,
+      "location_type": "stop",
+      "name": "14th Street @ Wertland St (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.034542,
+        -78.499384
+      ],
+      "url": ""
+    },
+    {
+      "code": "008",
+      "description": "",
+      "id": 4245898,
+      "location_type": "stop",
+      "name": "Alderman Rd @ Gooch/Dillard (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.029033,
+        -78.516388
+      ],
+      "url": ""
+    },
+    {
+      "code": "009",
+      "description": "",
+      "id": 4245900,
+      "location_type": "stop",
+      "name": "Alderman Rd @ AFC",
+      "parent_station_id": null,
+      "position": [
+        38.033934,
+        -78.514117
+      ],
+      "url": ""
+    },
+    {
+      "code": "034",
+      "description": "",
+      "id": 4245902,
+      "location_type": "stop",
+      "name": "Grady Ave @ 16th St",
+      "parent_station_id": null,
+      "position": [
+        38.040825,
+        -78.498187
+      ],
+      "url": ""
+    },
+    {
+      "code": "035",
+      "description": "",
+      "id": 4245904,
+      "location_type": "stop",
+      "name": "Grady Ave @ Preston Pl",
+      "parent_station_id": null,
+      "position": [
+        38.041064,
+        -78.498636
+      ],
+      "url": ""
+    },
+    {
+      "code": "036",
+      "description": "",
+      "id": 4245906,
+      "location_type": "stop",
+      "name": "Grady Ave @ 10 \u00bd St",
+      "parent_station_id": null,
+      "position": [
+        38.038806,
+        -78.492414
+      ],
+      "url": ""
+    },
+    {
+      "code": "037",
+      "description": "",
+      "id": 4245908,
+      "location_type": "stop",
+      "name": "Grady Ave @ 14th St",
+      "parent_station_id": null,
+      "position": [
+        38.040159,
+        -78.496089
+      ],
+      "url": ""
+    },
+    {
+      "code": "045",
+      "description": "",
+      "id": 4245910,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Pinn Hall",
+      "parent_station_id": null,
+      "position": [
+        38.032318,
+        -78.500844
+      ],
+      "url": ""
+    },
+    {
+      "code": "046",
+      "description": "",
+      "id": 4245912,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Kent Terrace",
+      "parent_station_id": null,
+      "position": [
+        38.0286274210271,
+        -78.5096342012234
+      ],
+      "url": ""
+    },
+    {
+      "code": "047",
+      "description": "",
+      "id": 4245914,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Maury Ave",
+      "parent_station_id": null,
+      "position": [
+        38.026107,
+        -78.514556
+      ],
+      "url": ""
+    },
+    {
+      "code": "048",
+      "description": "",
+      "id": 4245916,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Montebello Circle",
+      "parent_station_id": null,
+      "position": [
+        38.0287839849852,
+        -78.5098208220901
+      ],
+      "url": ""
+    },
+    {
+      "code": "049",
+      "description": "",
+      "id": 4245918,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Observatory Ave",
+      "parent_station_id": null,
+      "position": [
+        38.026406,
+        -78.513313
+      ],
+      "url": ""
+    },
+    {
+      "code": "050",
+      "description": "",
+      "id": 4245920,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Shamrock Rd (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0277014053651,
+        -78.5109978601189
+      ],
+      "url": ""
+    },
+    {
+      "code": "051",
+      "description": "",
+      "id": 4245922,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Shamrock Rd (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.027642,
+        -78.511548
+      ],
+      "url": ""
+    },
+    {
+      "code": "053",
+      "description": "",
+      "id": 4245924,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Valley Rd",
+      "parent_station_id": null,
+      "position": [
+        38.0310093800656,
+        -78.5080861079693
+      ],
+      "url": ""
+    },
+    {
+      "code": "054",
+      "description": "",
+      "id": 4245926,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Woodrow St",
+      "parent_station_id": null,
+      "position": [
+        38.0310295635754,
+        -78.5083550552254
+      ],
+      "url": ""
+    },
+    {
+      "code": "057",
+      "description": "",
+      "id": 4245928,
+      "location_type": "stop",
+      "name": "Madison Ave @ Grady Ave",
+      "parent_station_id": null,
+      "position": [
+        38.040431,
+        -78.496028
+      ],
+      "url": ""
+    },
+    {
+      "code": "058",
+      "description": "",
+      "id": 4245930,
+      "location_type": "stop",
+      "name": "Madison Ave @ Preston Ave",
+      "parent_station_id": null,
+      "position": [
+        38.041785,
+        -78.493186
+      ],
+      "url": ""
+    },
+    {
+      "code": "079",
+      "description": "",
+      "id": 4245932,
+      "location_type": "stop",
+      "name": "Preston Ave @ Washington Park",
+      "parent_station_id": null,
+      "position": [
+        38.03959,
+        -78.491635
+      ],
+      "url": ""
+    },
+    {
+      "code": "080",
+      "description": "",
+      "id": 4245934,
+      "location_type": "stop",
+      "name": "Rugby Rd @ Lambeth Ln (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.040338,
+        -78.501384
+      ],
+      "url": ""
+    },
+    {
+      "code": "081",
+      "description": "",
+      "id": 4245936,
+      "location_type": "stop",
+      "name": "Rugby Rd @ Lambeth Ln (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.040264,
+        -78.501313
+      ],
+      "url": ""
+    },
+    {
+      "code": "088",
+      "description": "",
+      "id": 4245938,
+      "location_type": "stop",
+      "name": "Stadium Rd @ Stadium Garage",
+      "parent_station_id": null,
+      "position": [
+        38.0300414,
+        -78.5122195
+      ],
+      "url": ""
+    },
+    {
+      "code": "096",
+      "description": "",
+      "id": 4245942,
+      "location_type": "stop",
+      "name": "Whitehead Rd @ Chemistry Drive",
+      "parent_station_id": null,
+      "position": [
+        38.0321088760668,
+        -78.5120298099258
+      ],
+      "url": ""
+    },
+    {
+      "code": "097",
+      "description": "",
+      "id": 4245944,
+      "location_type": "stop",
+      "name": "Whitehead Rd @ Scott Stadium",
+      "parent_station_id": null,
+      "position": [
+        38.0321529368456,
+        -78.5128796431998
+      ],
+      "url": ""
+    },
+    {
+      "code": "104",
+      "description": "",
+      "id": 4245946,
+      "location_type": "stop",
+      "name": "Alderman Rd @ Facilities Management (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0360388,
+        -78.5140687
+      ],
+      "url": ""
+    },
+    {
+      "code": "106",
+      "description": "",
+      "id": 4245948,
+      "location_type": "stop",
+      "name": "Maury Ave @ Clark Ct",
+      "parent_station_id": null,
+      "position": [
+        38.0270545318221,
+        -78.5158914327621
+      ],
+      "url": ""
+    },
+    {
+      "code": "023",
+      "description": "",
+      "id": 4248150,
+      "location_type": "stop",
+      "name": "Emmet St @ Central Grounds Garage",
+      "parent_station_id": null,
+      "position": [
+        38.035506203384,
+        -78.5081215153789
+      ],
+      "url": ""
+    },
+    {
+      "code": "100",
+      "description": "",
+      "id": 4248152,
+      "location_type": "stop",
+      "name": "Massie Rd @ North Grounds Rec (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0506433,
+        -78.5124984
+      ],
+      "url": ""
+    },
+    {
+      "code": "103",
+      "description": "",
+      "id": 4248156,
+      "location_type": "stop",
+      "name": "Arlington Blvd @ Millmont St",
+      "parent_station_id": null,
+      "position": [
+        38.049372,
+        -78.506336
+      ],
+      "url": ""
+    },
+    {
+      "code": "59",
+      "description": "",
+      "id": 4248158,
+      "location_type": "stop",
+      "name": "Massie Rd @ Copeley Apts",
+      "parent_station_id": null,
+      "position": [
+        38.051897,
+        -78.509797
+      ],
+      "url": ""
+    },
+    {
+      "code": "61",
+      "description": "",
+      "id": 4248160,
+      "location_type": "stop",
+      "name": "Massie Rd @ Faulkner Apts (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.048134,
+        -78.51205
+      ],
+      "url": ""
+    },
+    {
+      "code": "108",
+      "description": "",
+      "id": 4250386,
+      "location_type": "stop",
+      "name": "Emmet St @ Rothery Rd (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0411119508272,
+        -78.5061281919479
+      ],
+      "url": ""
+    },
+    {
+      "code": "109",
+      "description": "",
+      "id": 4250388,
+      "location_type": "stop",
+      "name": "University Ave @ Newcomb Rd (Westbound)",
+      "parent_station_id": null,
+      "position": [
+        38.037333,
+        -78.504722
+      ],
+      "url": ""
+    },
+    {
+      "code": "110",
+      "description": "",
+      "id": 4250390,
+      "location_type": "stop",
+      "name": "University Ave @ Newcomb Rd (Eastbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0374646758336,
+        -78.5050940298666
+      ],
+      "url": ""
+    },
+    {
+      "code": "111",
+      "description": "",
+      "id": 4250392,
+      "location_type": "stop",
+      "name": "Alderman Rd @ Morris Rd (Northbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0418518915609,
+        -78.5121101862815
+      ],
+      "url": ""
+    },
+    {
+      "code": "112",
+      "description": "",
+      "id": 4250394,
+      "location_type": "stop",
+      "name": "Stadium Rd @ Alderman Rd",
+      "parent_station_id": null,
+      "position": [
+        38.0287197265183,
+        -78.5163863249627
+      ],
+      "url": ""
+    },
+    {
+      "code": "113",
+      "description": "",
+      "id": 4250396,
+      "location_type": "stop",
+      "name": "Emmet St @ Snyder Tennis Courts",
+      "parent_station_id": null,
+      "position": [
+        38.0383266666726,
+        -78.5070656239986
+      ],
+      "url": ""
+    },
+    {
+      "code": "102",
+      "description": "",
+      "id": 4258638,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Chemistry Building",
+      "parent_station_id": null,
+      "position": [
+        38.0341703166237,
+        -78.5116969102865
+      ],
+      "url": ""
+    },
+    {
+      "code": "71",
+      "description": "",
+      "id": 4258640,
+      "location_type": "stop",
+      "name": "McCormick Rd @ McCormick Rd Dorms",
+      "parent_station_id": null,
+      "position": [
+        38.0344299928293,
+        -78.511790007893
+      ],
+      "url": ""
+    },
+    {
+      "code": "76",
+      "description": "",
+      "id": 4258642,
+      "location_type": "stop",
+      "name": "McCormick Rd @ UVA Chapel",
+      "parent_station_id": null,
+      "position": [
+        38.0362660389428,
+        -78.5047036180968
+      ],
+      "url": ""
+    },
+    {
+      "code": "98",
+      "description": "",
+      "id": 4258644,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Alderman Library",
+      "parent_station_id": null,
+      "position": [
+        38.035546,
+        -78.505295
+      ],
+      "url": ""
+    },
+    {
+      "code": "114",
+      "description": "",
+      "id": 4259436,
+      "location_type": "stop",
+      "name": "John Paul Jones Arena @ Garage",
+      "parent_station_id": null,
+      "position": [
+        38.0467440264232,
+        -78.5076160767284
+      ],
+      "url": ""
+    },
+    {
+      "code": "69",
+      "description": "",
+      "id": 4260150,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Garrett Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0342971845614,
+        -78.5060574809856
+      ],
+      "url": ""
+    },
+    {
+      "code": "72",
+      "description": "",
+      "id": 4260152,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Monroe Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0343808400246,
+        -78.5061534957008
+      ],
+      "url": ""
+    },
+    {
+      "code": "74",
+      "description": "",
+      "id": 4265734,
+      "location_type": "stop",
+      "name": "McCormick Rd @ Lile-Maupin House (Westbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0351950010852,
+        -78.5155971627998
+      ],
+      "url": ""
+    },
+    {
+      "code": "75",
+      "description": "",
+      "id": 4265736,
+      "location_type": "stop",
+      "name": "Hereford Dr @ Johnson House (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0305599840054,
+        -78.5196665720098
+      ],
+      "url": ""
+    },
+    {
+      "code": "107",
+      "description": "",
+      "id": 4266800,
+      "location_type": "stop",
+      "name": "Emmet St @ Rothery Rd (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.041139,
+        -78.506361
+      ],
+      "url": ""
+    },
+    {
+      "code": "41",
+      "description": "",
+      "id": 4266802,
+      "location_type": "stop",
+      "name": "Ivy Rd @ Emmet / Ivy Garage (EIG)",
+      "parent_station_id": null,
+      "position": [
+        38.041401,
+        -78.509224
+      ],
+      "url": ""
+    },
+    {
+      "code": "115",
+      "description": "",
+      "id": 4266818,
+      "location_type": "stop",
+      "name": "University Ave @ Madison Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0366256117848,
+        -78.5028022237842
+      ],
+      "url": ""
+    },
+    {
+      "code": "116",
+      "description": "",
+      "id": 4266820,
+      "location_type": "stop",
+      "name": "Maury Ave (Southbound)",
+      "parent_station_id": null,
+      "position": [
+        38.0281204495699,
+        -78.516566398399
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "So-so bus pull off. Serves Barracks Rd Shopping Center",
+      "id": 4267000,
+      "location_type": "stop",
+      "name": "Barracks Road McDonalds (North)",
+      "parent_station_id": null,
+      "position": [
+        38.048901,
+        -78.50489350000001
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267002,
+      "location_type": "stop",
+      "name": "Dillwyn Food Lion",
+      "parent_station_id": null,
+      "position": [
+        37.544322,
+        -78.47399
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267004,
+      "location_type": "stop",
+      "name": "Duck's Corner Store",
+      "parent_station_id": null,
+      "position": [
+        37.556564,
+        -78.585817
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Outbound",
+      "id": 4267006,
+      "location_type": "stop",
+      "name": "Emmet St @ Central Grounds Garage",
+      "parent_station_id": null,
+      "position": [
+        38.035126,
+        -78.508365
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267008,
+      "location_type": "stop",
+      "name": "Fontaine Research Park",
+      "parent_station_id": null,
+      "position": [
+        38.025824,
+        -78.526102
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267010,
+      "location_type": "stop",
+      "name": "Food Lion Hollymead",
+      "parent_station_id": null,
+      "position": [
+        38.129341,
+        -78.436039
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267012,
+      "location_type": "stop",
+      "name": "Freedom Blvd @ Edmond Dr",
+      "parent_station_id": null,
+      "position": [
+        38.070242,
+        -78.715141
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267014,
+      "location_type": "stop",
+      "name": "Hydraulic Ridge Rd",
+      "parent_station_id": null,
+      "position": [
+        38.07436,
+        -78.498725
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267016,
+      "location_type": "stop",
+      "name": "Jarman Lake Rd @ Grayrock Rd",
+      "parent_station_id": null,
+      "position": [
+        38.070638,
+        -78.71744
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, West",
+      "id": 4267018,
+      "location_type": "stop",
+      "name": "Jarmans Gap Rd @ Old Trail Rd",
+      "parent_station_id": null,
+      "position": [
+        38.068441,
+        -78.711378
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, UVA Student Health",
+      "id": 4267020,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Brandon Ave",
+      "parent_station_id": null,
+      "position": [
+        38.032061,
+        -78.5037255
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound",
+      "id": 4267022,
+      "location_type": "stop",
+      "name": "Jefferson Park Ave @ Pinn Hall",
+      "parent_station_id": null,
+      "position": [
+        38.032443,
+        -78.50065000000001
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Outbound, North",
+      "id": 4267024,
+      "location_type": "stop",
+      "name": "Lee St @ UVA Cancer Center",
+      "parent_station_id": null,
+      "position": [
+        38.031796,
+        -78.4983875
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267026,
+      "location_type": "stop",
+      "name": "Lockwood Dr @ Abington Place Plaza",
+      "parent_station_id": null,
+      "position": [
+        38.130205,
+        -78.444702
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267028,
+      "location_type": "stop",
+      "name": "Martha Jefferson Hospital",
+      "parent_station_id": null,
+      "position": [
+        38.022554,
+        -78.443327
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267030,
+      "location_type": "stop",
+      "name": "Mechums River Rd @ Amber Ridge Rd",
+      "parent_station_id": null,
+      "position": [
+        38.068229,
+        -78.664282
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267032,
+      "location_type": "stop",
+      "name": "Midway Market",
+      "parent_station_id": null,
+      "position": [
+        37.680904,
+        -78.514674
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267034,
+      "location_type": "stop",
+      "name": "Nelson Center",
+      "parent_station_id": null,
+      "position": [
+        37.750511,
+        -78.879282
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Outbound, North",
+      "id": 4267036,
+      "location_type": "stop",
+      "name": "Old Trail Rd @ Old Trail Village Center",
+      "parent_station_id": null,
+      "position": [
+        38.058445,
+        -78.71074
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267038,
+      "location_type": "stop",
+      "name": "Our Lady of Peace",
+      "parent_station_id": null,
+      "position": [
+        38.07421,
+        -78.473779
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267040,
+      "location_type": "stop",
+      "name": "Park Ridge Dr @ Cardinal Crest Ct",
+      "parent_station_id": null,
+      "position": [
+        38.064478,
+        -78.679813
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267042,
+      "location_type": "stop",
+      "name": "Park Ridge Dr @ Eastern Ave",
+      "parent_station_id": null,
+      "position": [
+        38.065426,
+        -78.685201
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267044,
+      "location_type": "stop",
+      "name": "Park Ridge Dr @ Stonegate Ln",
+      "parent_station_id": null,
+      "position": [
+        38.066491,
+        -78.677233
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Stultz Center parking lot at the bottom of the PVCC hill.",
+      "id": 4267046,
+      "location_type": "stop",
+      "name": "PVCC Stultz Center",
+      "parent_station_id": null,
+      "position": [
+        38.005661,
+        -78.48037
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267048,
+      "location_type": "stop",
+      "name": "Re-Store 'N Station",
+      "parent_station_id": null,
+      "position": [
+        37.718096,
+        -78.503446
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267050,
+      "location_type": "stop",
+      "name": "Scottsville Farmer's Market Pavilion",
+      "parent_station_id": null,
+      "position": [
+        37.798107,
+        -78.495335
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Outbound, East",
+      "id": 4267052,
+      "location_type": "stop",
+      "name": "Summerford Ln @ Welbourne Ln (East)",
+      "parent_station_id": null,
+      "position": [
+        38.064234,
+        -78.710181
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267054,
+      "location_type": "stop",
+      "name": "Thomas Nelson Hwy @ River Rd",
+      "parent_station_id": null,
+      "position": [
+        37.845289,
+        -78.822211
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267056,
+      "location_type": "stop",
+      "name": "Three Notchd Rd @ East Downtown Crozet",
+      "parent_station_id": null,
+      "position": [
+        38.069265,
+        -78.698305
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267058,
+      "location_type": "stop",
+      "name": "Three Notchd Rd @ Starr Hill Brewery",
+      "parent_station_id": null,
+      "position": [
+        38.069908,
+        -78.686216
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Formerly Hollymead Town Center",
+      "id": 4267060,
+      "location_type": "stop",
+      "name": "Towncenter Dr @ Community St",
+      "parent_station_id": null,
+      "position": [
+        38.126757,
+        -78.444257
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267062,
+      "location_type": "stop",
+      "name": "UVA Medical Center Loading Dock (Lane Rd)",
+      "parent_station_id": null,
+      "position": [
+        38.031301,
+        -78.499844
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267064,
+      "location_type": "stop",
+      "name": "Virginia Institute for the Blind",
+      "parent_station_id": null,
+      "position": [
+        38.022686,
+        -78.472787
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267066,
+      "location_type": "stop",
+      "name": "Water St @ Omni Hotel",
+      "parent_station_id": null,
+      "position": [
+        38.031599,
+        -78.484879
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "",
+      "id": 4267068,
+      "location_type": "stop",
+      "name": "Westminster Canterbury",
+      "parent_station_id": null,
+      "position": [
+        38.028927,
+        -78.438473
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Outbound, North",
+      "id": 4267070,
+      "location_type": "stop",
+      "name": "Whitehead Rd @ Rice Hall",
+      "parent_station_id": null,
+      "position": [
+        38.0315875,
+        -78.51128299999999
+      ],
+      "url": ""
+    },
+    {
+      "code": "",
+      "description": "Inbound, Outbound",
+      "id": 4267072,
+      "location_type": "stop",
+      "name": "Wickham Pond Dr @ Clubhouse",
+      "parent_station_id": null,
+      "position": [
+        38.069173,
+        -78.669407
+      ],
+      "url": ""
+    },
+    {
+      "code": "117",
+      "description": "",
+      "id": 4268544,
+      "location_type": "stop",
+      "name": "Massie Rd @ JPJ (West Entrance)",
+      "parent_station_id": null,
+      "position": [
+        38.0456128786904,
+        -78.5077582509163
+      ],
+      "url": ""
+    }
+  ],
+  "success": true
+}
