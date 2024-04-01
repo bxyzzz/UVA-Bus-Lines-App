@@ -1,32 +1,42 @@
-import 'package:flutter/material.dart';
-import 'list_view.dart'; // Make sure to create this file and define ListViewPage widget in it
 
-void main() {
-  runApp(MyApp());
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+class MapViewPage extends StatefulWidget {
+  final BusLine busLine;
+
+  MapViewPage({required this.busLine});
+
+  @override
+  _MapViewPageState createState() => _MapViewPageState();
 }
 
-class MyApp extends StatelessWidget {
+class _MapViewPageState extends State<MapViewPage> {
+  GoogleMapController? _controller;
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bus Lines App',
-      theme: ThemeData(
-        // Define the default brightness and colors.
-        primaryColor: Colors.blue,
-        // accentColor: Colors.blueAccent,
-        
-        // Use Material 3 (Or Material You)
-        useMaterial3: true,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.busLine.name),
       ),
-      home: ListViewPage(), // Set ListViewPage as the home screen of the app
+      body: GoogleMap(
+        onMapCreated: (controller) {
+          _controller = controller;
+          setMapBounds(); // Implement this method based on widget.busLine.bounds
+        },
+        initialCameraPosition: CameraPosition(
+          // Initial position based on bus line's bounds or a default position
+          target: LatLng(defaultLat, defaultLng),
+          zoom: 10,
+        ),
+        markers: getMarkersForStops(), // Implement this based on widget.busLine.stops
+      ),
     );
   }
 }
 
-
-
-/*
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'src/locations.dart' as locations;
 
