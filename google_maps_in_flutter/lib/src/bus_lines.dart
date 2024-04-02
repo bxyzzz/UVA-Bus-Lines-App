@@ -1,3 +1,4 @@
+// Used online JSON to Dart Class convertor
 
 class BusLine {
   final int agencyId;
@@ -44,16 +45,71 @@ class BusLine {
       isFavorite: false,
     );
   }
+} 
+
+class BusRoute {
+    int id;
+    List<int> stops;
+
+    BusRoute({
+        required this.id,
+        required this.stops,
+    });
+
+  factory BusRoute.fromJson(Map<String, dynamic> json) {
+    return BusRoute(
+      id: json['id'],
+      stops: List<int>.from(json['stops']),
+    );
+  }
+
+}
+
+class Stop {
+    String code;
+    String description;
+    int id;
+    String locationType;
+    String name;
+    dynamic parentStationId;
+    List<double> position;
+    String url;
+
+    Stop({
+        required this.code,
+        required this.description,
+        required this.id,
+        required this.locationType,
+        required this.name,
+        required this.parentStationId,
+        required this.position,
+        required this.url,
+    });
+
+    factory Stop.fromJson(Map<String, dynamic> json) {
+      return Stop(
+        code: json['code'],
+        description: json['description'],
+        id: json['id'],
+        locationType: json['location_type'],
+        name: json['name'],
+        parentStationId: json['parent_station_id'],
+        position: List<double>.from(json['position']),
+        url: json['url'],
+    );
+  }
+
 }
 
 /*
-class BusLine {
-    List<Line> lines;
+
+class BusInfo {
+    List<BusLine> lines;
     List<Route> routes;
     List<Stop> stops;
     bool success;
 
-    BusLine({
+    BusInfo({
         required this.lines,
         required this.routes,
         required this.stops,
@@ -62,7 +118,7 @@ class BusLine {
 
 }
 
-class Line {
+class BusLine {
     int agencyId;
     List<double> bounds;
     String color;
@@ -74,8 +130,9 @@ class Line {
     String textColor;
     Type type;
     String url;
+    bool isFavorite;
 
-    Line({
+    BusLine({
         required this.agencyId,
         required this.bounds,
         required this.color,
@@ -87,8 +144,25 @@ class Line {
         required this.textColor,
         required this.type,
         required this.url,
+        required this.isFavorite
     });
 
+factory BusLine.fromJson(Map<String, dynamic> json) {
+    return BusLine(
+      agencyId: json['agency_id'],
+      bounds: List<double>.from(json['bounds']),
+      color: json['color'],
+      description: json['description'],
+      id: json['id'],
+      isActive: json['is_active'],
+      longName: json['long_name'],
+      shortName: json['short_name'],
+      textColor: json['text_color'],
+      type: json['type'],
+      url: json['url'],
+      isFavorite: false,
+    );
+  }
 }
 
 enum Type {
@@ -132,5 +206,4 @@ class Stop {
 enum LocationType {
     STOP
 }
-
 */

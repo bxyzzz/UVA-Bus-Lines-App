@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'list_view.dart'; // Make sure to create this file and define ListViewPage widget in it
+import 'package:permission_handler/permission_handler.dart';
+import 'package:geolocator/geolocator.dart';
 
-void main() {
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  locationPermissionStatus();
   runApp(MyApp());
 }
 
@@ -21,6 +26,51 @@ class MyApp extends StatelessWidget {
   }
 }
 
+ void locationPermissionStatus() async {
+   // Request location permission
+
+   bool serviceEnabled;
+  LocationPermission permission;
+
+  // Test if location services are enabled.
+  serviceEnabled = await Geolocator.isLocationServiceEnabled();
+  if (!serviceEnabled) {
+    return Future.error('Location services are disabled.');
+  }
+
+  permission = await Geolocator.checkPermission();
+  if (permission == LocationPermission.denied) {
+    permission = await Geolocator.requestPermission();
+    if (permission == LocationPermission.denied) {
+      return Future.error('Location permissions are denied');
+    }
+  }
+  
+  if (permission == LocationPermission.deniedForever) {
+    // Permissions are denied forever, handle appropriately.
+    return Future.error('Location permissions are permanently denied, we cannot request permissions.');
+  } 
+
+  // When we reach here, permissions are granted and we can continue accessing the position of the device.
+  final position = await Geolocator.getCurrentPosition();
+  print('Latitude: ${position.latitude}, Longitude: ${position.longitude}');
+
+
+   /*
+   
+   const permissionLocation = Permission.location;
+
+   final status = await permissionLocation.request();
+   if (status == PermissionStatus.granted) {
+     // Get the current location
+     final position = await Geolocator.getCurrentPosition();
+     print('Latitude: ${position.latitude}, Longitude: ${position.longitude}');
+   } else {
+     // Permission denied
+     print('Location permission denied.');
+   }
+   */
+  }
 
 
 /*

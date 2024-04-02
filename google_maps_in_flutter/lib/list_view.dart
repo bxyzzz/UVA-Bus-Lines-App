@@ -6,12 +6,14 @@
 
 import 'package:flutter/material.dart';
 import 'src/bus_lines.dart';
-import 'package:flutter/material.dart';
 import 'map_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'package:collection/collection.dart';
 import 'package:http/http.dart' as http;
+
+// Source for permissions:
+// https://medium.com/@dudhatkirtan/how-to-use-permission-handler-in-flutter-db964943237e
 
 class ListViewPage extends StatefulWidget {
   @override
@@ -26,9 +28,9 @@ class _ListViewPageState extends State<ListViewPage> {
   void initState() {
     super.initState();
     getBusLines().then((lines) {
-    setState(() {
-      busLines = lines; // Updates the state with bus lines
-    });
+      setState(() {
+        busLines = lines; // Updates the state with bus lines
+      });
     });
   }
 
@@ -62,6 +64,8 @@ class _ListViewPageState extends State<ListViewPage> {
               },
 
             ),
+             // Set it to be black if the default color is white
+            textColor: hexStringToColor(busLine.textColor) == Colors.white ? Colors.black : hexStringToColor(busLine.textColor),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => MapViewPage(busLine: busLine)),
@@ -84,11 +88,15 @@ class _ListViewPageState extends State<ListViewPage> {
   }
 }
 
+Color hexStringToColor(String hexString) {
+    String addPrefix = "0xFF" + hexString;
+  
+    return Color(int.parse(addPrefix));
+}
+
 int compareLines(BusLine a, BusLine b) {
   int favA = a.isFavorite ? 1 : 0; // Apparently doesn't work for bools... so I have to convert it to int since compareTo doesn't work
   int favB = b.isFavorite ? 1 : 0;
-
-  
 
   var comparisonResult = favB.compareTo(favA); // B compareTo A so it puts favorites up TOP
   if (comparisonResult != 0) {
@@ -101,7 +109,6 @@ int compareLines(BusLine a, BusLine b) {
 Future<List<BusLine>> getBusLines() async {
   // Must get SharedPreferences to update the bus line Favorites!!
   final preferences = await SharedPreferences.getInstance();
-
   const url = 'https://www.cs.virginia.edu/~pm8fc/busses/busses.json';
   final response = await http.get(
     Uri.parse(
