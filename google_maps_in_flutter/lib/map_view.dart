@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'src/bus_lines.dart';
+import 'package:geolocator/geolocator.dart';
+
+// Geolocation Source: https://developers.google.com/maps/documentation/javascript/geolocation
 
 class MapViewPage extends StatefulWidget {
   final BusLine busLine;
@@ -21,6 +24,9 @@ class _MapViewPageState extends State<MapViewPage> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _addCurrentLocationMarker();
+    });
     _markers = {}; // Initialize markers
   }
 
@@ -47,6 +53,8 @@ class _MapViewPageState extends State<MapViewPage> {
     _controller = controller;
     List<Stop> busStops = await getBusLineStops();
     displayStops(busStops);
+    await _addCurrentLocationMarker();
+
     _animateCameraToBounds();
   }
 
@@ -89,6 +97,26 @@ class _MapViewPageState extends State<MapViewPage> {
     });
   }
 
+  Future<void> _addCurrentLocationMarker() async {
+  try {
+    print("ENTER LOCATION");
+    Position position = await getUserCurrentLocation();
+
+    final marker = Marker(
+      markerId: MarkerId('currentLocation'),
+      position: LatLng(position.latitude, position.longitude),
+      infoWindow: InfoWindow(title: 'Current Position'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen), // Set marker color to green
+    );
+
+    setState(() {
+      _markers.add(marker); // Add the current location marker to the map
+    });
+  } catch (e) {
+    print('Failed to get current location: $e');
+  }
+}
+
   void _animateCameraToBounds() {
     _controller.animateCamera(
       CameraUpdate.newLatLngBounds(
@@ -101,6 +129,18 @@ class _MapViewPageState extends State<MapViewPage> {
     );
   }
 }
+
+// Source: https://www.geeksforgeeks.org/how-to-get-users-current-location-on-google-maps-in-flutter/#google_vignette
+// created method for getting user current location
+Future<Position> getUserCurrentLocation() async {
+    await Geolocator.requestPermission().then((value){
+    }).onError((error, stackTrace) async {
+      await Geolocator.requestPermission();
+      print("ERROR"+error.toString());
+    });
+    return await Geolocator.getCurrentPosition();
+}
+
 
 
 

@@ -84,7 +84,9 @@ class _ListViewPageState extends State<ListViewPage> {
       busLines.sort(compareLines);
     });
 
-    preferences.setBool('busLine.id', busLine.isFavorite);
+    //preferences.setBool('busLine.id', busLine.isFavorite);
+    preferences.setBool('favorite_${busLine.id}', busLine.isFavorite);
+
   }
 }
 
