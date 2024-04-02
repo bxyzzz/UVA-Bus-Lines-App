@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+//import 'package:google_maps_in_flutter/src/locations.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:http/http.dart' as http;
-import 'src/bus_lines.dart'; // Ensure this path is correct
+import 'src/bus_lines.dart';
 
 class MapViewPage extends StatefulWidget {
   final BusLine busLine;
@@ -41,11 +42,15 @@ class _MapViewPageState extends State<MapViewPage> {
   }
 
   void _onMapCreated(GoogleMapController controller) async {
+    // So I had to split everything into functions because having everything as one async function wouldn't update the
+    // map with the markers, so this displays the markers, then moves the camera to the bounds.
     _controller = controller;
     List<Stop> busStops = await getBusLineStops();
     displayStops(busStops);
     _animateCameraToBounds();
   }
+
+  // SOURCE: https://stackoverflow.com/questions/59920284/how-to-find-an-element-in-a-dart-list
 
   Future<List<Stop>> getBusLineStops() async {
     const url = 'https://www.cs.virginia.edu/~pm8fc/busses/busses.json';
@@ -70,6 +75,7 @@ class _MapViewPageState extends State<MapViewPage> {
     return busLineStops;
   }
 
+  // Helper function to display the stops by adding all stops in the given stopList into _markers set.
   void displayStops(List<Stop> stopList) {
     setState(() {
       _markers.clear(); // Clear existing markers
@@ -84,14 +90,13 @@ class _MapViewPageState extends State<MapViewPage> {
   }
 
   void _animateCameraToBounds() {
-    if (widget.busLine.bounds.isEmpty || widget.busLine.bounds.length < 4) return; // Check for valid bounds
     _controller.animateCamera(
       CameraUpdate.newLatLngBounds(
         LatLngBounds(
           southwest: LatLng(widget.busLine.bounds[0], widget.busLine.bounds[1]),
           northeast: LatLng(widget.busLine.bounds[2], widget.busLine.bounds[3]),
         ),
-        100, // Padding
+        100, 
       ),
     );
   }
