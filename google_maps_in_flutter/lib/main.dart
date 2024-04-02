@@ -11,14 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bus Lines App',
       theme: ThemeData(
-        // Define the default brightness and colors.
         primaryColor: Colors.blue,
         // accentColor: Colors.blueAccent,
         
-        // Use Material 3 (Or Material You)
         useMaterial3: true,
       ),
-      home: ListViewPage(), // Set ListViewPage as the home screen of the app
+      home: ListViewPage(), // Home page is the list view
     );
   }
 }

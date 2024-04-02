@@ -5,13 +5,12 @@
 // https://quicktype.io/dart
 
 import 'package:flutter/material.dart';
-
-// This is a simplified version. You'll need to adjust according to your data structure and requirements.
 import 'src/bus_lines.dart';
 import 'package:flutter/material.dart';
-import 'map_view.dart'; // Adjust the path as necessary based on your project structure
+import 'map_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+import 'package:collection/collection.dart';
 import 'package:http/http.dart' as http;
 
 class ListViewPage extends StatefulWidget {
@@ -42,6 +41,7 @@ class _ListViewPageState extends State<ListViewPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(title),
+        backgroundColor: Colors.blueAccent,
       ),
       
       body: ListView.builder(
@@ -76,11 +76,26 @@ class _ListViewPageState extends State<ListViewPage> {
 
     setState(() {
       busLine.isFavorite = !busLine.isFavorite; // Just toggle the isFavorite boolean
+
+      busLines.sort(compareLines);
     });
 
     preferences.setBool('busLine.id', busLine.isFavorite);
-
   }
+}
+
+int compareLines(BusLine a, BusLine b) {
+  int favA = a.isFavorite ? 1 : 0; // Apparently doesn't work for bools... so I have to convert it to int since compareTo doesn't work
+  int favB = b.isFavorite ? 1 : 0;
+
+  
+
+  var comparisonResult = favB.compareTo(favA); // B compareTo A so it puts favorites up TOP
+  if (comparisonResult != 0) {
+    return comparisonResult;
+  }
+  // Favorite value are the same, so subsort by given name.
+  return a.longName.compareTo(b.longName);
 }
 
 Future<List<BusLine>> getBusLines() async {
@@ -95,15 +110,18 @@ Future<List<BusLine>> getBusLines() async {
 
   final data = jsonDecode(response.body); // JSON data decode
   print(data); // Debugging to see if I got the data
-  final lines = data['lines'] as List;
+  
+  // First, convert JSON objects to BusLine instances
+  List<BusLine> lines = (data['lines'] as List).map<BusLine>((json) {
+    bool isFavorite = preferences.getBool('favorite_${json['id']}') ?? false;
+    return BusLine.fromJson(json)..isFavorite = isFavorite;
+  }).toList();
 
   // Sort my data when initially getting bus lines
 
   // SOURCE: https://stackoverflow.com/questions/53547997/sort-a-list-of-objects-in-flutter-dart-by-property-value
 
-  lines.sort((a, b) => 
-    a.isFavorite.compareTo(b.isFavorite)
-  );
+  lines.sort(compareLines);
 
-  return lines.map<BusLine>((json) => BusLine.fromJson(json)).toList();
+  return lines;
 }
