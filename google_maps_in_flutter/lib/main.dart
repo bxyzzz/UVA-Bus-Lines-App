@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'list_view.dart'; // Make sure to create this file and define ListViewPage widget in it
+import 'list_view.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 
  void locationPermissionStatus() async {
    // Request location permission
-   
+
     bool serviceEnabled;
     LocationPermission permission;
 
@@ -71,6 +71,8 @@ class MyApp extends StatelessWidget {
 
 
 /*
+// ORIGINAL GOOGLE_MAPS TEMPLATE
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'src/locations.dart' as locations;

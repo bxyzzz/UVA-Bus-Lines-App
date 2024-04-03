@@ -26,7 +26,7 @@ class _MapViewPageState extends State<MapViewPage> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
     });
-    _markers = {}; // Initialize markers
+    _markers = {}; // Initialize markers set for the stops
   }
 
   @override
@@ -41,7 +41,7 @@ class _MapViewPageState extends State<MapViewPage> {
           target: LatLng(38.0316, -78.5108), // Default position set to Rice Hall
           zoom: 10,
         ),
-        markers: _markers, // Use the _markers set
+        markers: _markers,
       ),
     );
   }
@@ -82,9 +82,8 @@ class _MapViewPageState extends State<MapViewPage> {
 
   // Helper function to display the stops by adding all stops in the given stopList into _markers set.
   Future<void> displayStops(List<Stop> stopList) async {
-    //Position currPosition = await getUserCurrentLocation();
-    
-    Position currPosition = await getSetLocation(); // FOR MANUALLY SETTING POSITION TO SEE IF CURRENT LOCATION MARKER WORKS
+    Position currPosition = await getUserCurrentLocation();
+    //Position currPosition = await getSetLocation(); // FOR MANUALLY SETTING POSITION TO SEE IF CURRENT LOCATION MARKER WORKS
 
     print("CURRENT POSITION DEBUG: ");
     print(currPosition);
@@ -137,7 +136,7 @@ Future<Position> getUserCurrentLocation() async {
 
 
 // DELETE LATER: HARDCODED
-
+/*
 Future<Position> getSetLocation() async {
   return Position(
     latitude: 38.0316, // Example latitude for San Francisco
@@ -153,6 +152,7 @@ Future<Position> getSetLocation() async {
     altitudeAccuracy: 0.0,
   );
 }
+*/
 
 
 
