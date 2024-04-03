@@ -28,11 +28,11 @@ class MyApp extends StatelessWidget {
 
  void locationPermissionStatus() async {
    // Request location permission
-
+   
     bool serviceEnabled;
     LocationPermission permission;
 
-  // Test if location services are enabled.
+  // this code block i found online tests if its enabled but I think I already do that in my later code
   /*
   serviceEnabled = await Geolocator.isLocationServiceEnabled();
   if (!serviceEnabled) {
@@ -49,9 +49,8 @@ class MyApp extends StatelessWidget {
     }
   }
 
-  // When we reach here, permissions are granted and we can continue accessing the position of the device.
   final position = await Geolocator.getCurrentPosition();
-  print('Latitude: ${position.latitude}, Longitude: ${position.longitude}');
+  print('Latitude: ${position.latitude}, Longitude: ${position.longitude}'); // debug statement
 
 
    /*
