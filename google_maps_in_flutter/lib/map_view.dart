@@ -25,7 +25,6 @@ class _MapViewPageState extends State<MapViewPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _addCurrentLocationMarker();
     });
     _markers = {}; // Initialize markers
   }
@@ -52,9 +51,7 @@ class _MapViewPageState extends State<MapViewPage> {
     // map with the markers, so this displays the markers, then moves the camera to the bounds.
     _controller = controller;
     List<Stop> busStops = await getBusLineStops();
-    displayStops(busStops);
-    await _addCurrentLocationMarker();
-
+    await displayStops(busStops);
     _animateCameraToBounds();
   }
 
@@ -84,7 +81,23 @@ class _MapViewPageState extends State<MapViewPage> {
   }
 
   // Helper function to display the stops by adding all stops in the given stopList into _markers set.
-  void displayStops(List<Stop> stopList) {
+  Future<void> displayStops(List<Stop> stopList) async {
+    //Position currPosition = await getUserCurrentLocation();
+    
+    Position currPosition = await getSetLocation(); // FOR MANUALLY SETTING POSITION TO SEE IF CURRENT LOCATION MARKER WORKS
+
+    print("CURRENT POSITION DEBUG: ");
+    print(currPosition);
+
+
+
+    final currLocationMarker = Marker(
+      markerId: MarkerId('currentLocation'),
+      position: LatLng(currPosition.latitude, currPosition.longitude),
+      infoWindow: InfoWindow(title: 'Current Position'),
+      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue), // Set marker color to blue
+    );
+
     setState(() {
       _markers.clear(); // Clear existing markers
       for (final stop in stopList) {
@@ -94,28 +107,9 @@ class _MapViewPageState extends State<MapViewPage> {
           infoWindow: InfoWindow(title: stop.name, snippet: stop.description),
         ));
       }
+      _markers.add(currLocationMarker); // Add the current location marker to the map
     });
   }
-
-  Future<void> _addCurrentLocationMarker() async {
-  try {
-    print("ENTER LOCATION");
-    Position position = await getUserCurrentLocation();
-
-    final marker = Marker(
-      markerId: MarkerId('currentLocation'),
-      position: LatLng(position.latitude, position.longitude),
-      infoWindow: InfoWindow(title: 'Current Position'),
-      icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen), // Set marker color to green
-    );
-
-    setState(() {
-      _markers.add(marker); // Add the current location marker to the map
-    });
-  } catch (e) {
-    print('Failed to get current location: $e');
-  }
-}
 
   void _animateCameraToBounds() {
     _controller.animateCamera(
@@ -141,6 +135,24 @@ Future<Position> getUserCurrentLocation() async {
     return await Geolocator.getCurrentPosition();
 }
 
+
+// DELETE LATER: HARDCODED
+
+Future<Position> getSetLocation() async {
+  return Position(
+    latitude: 38.0316, // Example latitude for San Francisco
+    longitude: -78.5108, // Example longitude for San Francisco
+    timestamp: DateTime.now(),
+    accuracy: 0.0,
+    altitude: 0.0,
+
+    heading: 0.0,
+    headingAccuracy: 0.0,
+    speed: 0.0,
+    speedAccuracy: 0.0,
+    altitudeAccuracy: 0.0,
+  );
+}
 
 
 
@@ -206,7 +218,7 @@ class _MapViewPageState extends State<MapViewPage> {
         ) ,
         */
 
-        //markers: getMarkersForStops(), // Implement this based on widget.busLine.stops
+        //markers: getMarkersForStops(), 
       ),
     );
   }
